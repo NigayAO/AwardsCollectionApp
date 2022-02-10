@@ -47,6 +47,7 @@ struct CustomGridView_Previews: PreviewProvider {
     static var previews: some View {
         CustomGridView(items: [11, 3, 7, 17, 5, 2, 1], columns: 3) { itemSize, item  in
             Text("\(item)")
+                .frame(width: itemSize, height: itemSize)
         }
     }
 }
